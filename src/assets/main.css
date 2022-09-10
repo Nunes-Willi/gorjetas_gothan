@@ -4,19 +4,23 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 2rem;
-
-  font-weight: normal;
 }
 
 main{
-  background-color: gray;
-  height: 25%;
+  background-color: rgb(172, 168, 168);
+  height: 350px;
+  width: 500px;
+}
+
+h1, h2, p{
+  color: yellow;
+  font-style: italic;
 }
 
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    align-items: center;
     background-image: url(https://i.pinimg.com/originals/e0/9f/e9/e09fe970d3bbb2d340f7f4729955bdad.jpg);
   }
 }

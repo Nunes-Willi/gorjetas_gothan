@@ -27,16 +27,16 @@ export default {
 <template>
 <body>
   <main>
-  <div class="conteudo-oi">
+  <div class="princ">
     <h1>Gorjetas de Gotham</h1>
-    <label> <p>Qual o valor da conta?</p>
+    <label>
+      <p>Qual o valor da conta?</p>
       <input type="number" v-model="count" id="conta">
     </label>
 
     <label>
       <p>Qual foi a qualidade do serviço?</p>
       <select oi v-model="valor_gorjeta">
-        <option value="100">100% THE JOKER</option>
         <option value="50">50% O alto escalão de Gotham</option>
         <option value="30">30% Excepcional</option>
         <option value="25">25% Muito bom</option>
@@ -47,11 +47,12 @@ export default {
       </select>
     </label>
 
-    <label><p>Quantas pessoas estão dividindo a conta?</p>
+    <label>
+      <p>Quantas pessoas estão dividindo a conta?</p>
       <input type="number" v-model="people" id="people">
     </label>
     <p>Gorjeta do Garçon</p>
-    <button type="button" @click="calcular">R$:
+    <button type="button" @click="calcular">Calcular valor R$:
       <span id="resultado"></span>
     </button>
     <h2>É do restaurante direto pro ARKHAN</h2>
